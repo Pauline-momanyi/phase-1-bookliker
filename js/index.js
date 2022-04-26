@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         let li = document.createElement('li')
                         li.textContent+=addLike
                         eachLike.appendChild(li) 
-                        book.users = {...book.users, newLike}  
+                        book.users = [...book.users, newLike] 
                         
                         addUser(book) 
                     })
